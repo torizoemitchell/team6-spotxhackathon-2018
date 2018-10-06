@@ -57,8 +57,11 @@ function initMap() {
         });
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
+          console.log(typeof response.data.Items[i].taskId);
           return function() {
-            infoWindow.setContent(response.data.Items[i].desc);
+            infoWindow.setContent('<h3>'+ response.data.Items[i].type +'</h3>'
+            +'<p>'+ response.data.Items[i].desc +'</p>'
+            +'<a class="btn btn-primary" href="complete.html?t='+ parseInt(response.data.Items[i].taskId) +'&desc='+ response.data.Items[i].desc +'" role="button">Claim This Task</a>');
             infoWindow.open(map, marker);
           }
         })(marker, i));
