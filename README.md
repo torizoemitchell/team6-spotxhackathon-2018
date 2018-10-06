@@ -4,7 +4,8 @@
 ## Technologies
 * Javascript
 * Google Maps JS API
-* Bootstrap CSS
+* Bootstrap
 * Node.js
 * AWS Lambda
 * AWS DynamoDB
+* Serverless
