@@ -8,8 +8,8 @@ var map, infoWindow;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {
-      lat: -34.397,
-      lng: 150.644
+      lat: 39.5501,
+      lng: -105.7821
     },
     zoom: 6
   });
@@ -33,7 +33,7 @@ function initMap() {
         }
       });
       map.setCenter(pos);
-      map.setZoom(13);
+      map.setZoom(12);
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
     });
