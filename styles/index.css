@@ -8,14 +8,13 @@
 }
 
 .container {
-  flex-wrap: wrap;
   border: 2.5px solid black;
   text-align: center;
-  margin: auto;
   /* padding-right: 25px;
   padding-left: 25px;
   padding-bottom: 25px;*/
-  margin: 20px;
+  /* margin: 20px; */
+  margin-bottom: 20px;
 }
 .card{
   padding-top: 10px;
@@ -31,14 +30,17 @@
   padding-top: 20px;
   padding-bottom: 30px;
   margin-bottom: 0px;
+  font-size: 55px;
 }
 
 #navbar {
   background-color: lightgrey;
   justify-content: center;
-
 }
 
+.home-cards{
+  padding: 5px;
+}
 li {
   display: inline-block;
   float: none;
