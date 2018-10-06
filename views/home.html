@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Home</title>
+    <link rel="shortcut icon" href="../images/high-five.png"/>
+    <!--  keep this above all other css stylesheets!!!  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/index.css">
+  </head>
+
+  <body>
+    <img src='../images/high-five.png'id='logo'>
+    <h1 class='title'>"Name of App"</h1>
+
+    <div class="container">
+      <div class='row home-cards'>
+        <!-- first card -->
+        <div class='col-md-3 card'>
+          <button type="button" class="btn btn-primary btn-lg" onclick="location.href = 'claim.html';">Claim a Task</button>
+          <div class="card-body">
+            <p class="card-text">Go to community service and verification tasks.</p>
+          </div>
+        </div>
+
+        <!-- second card -->
+        <div class='col-md-3 card'>
+          <button type="button" class="btn btn-primary btn-lg" onclick="location.href = 'reward.html';">See Your Rewards</button>
+          <div class="card-body">
+            <p class="card-text">View Rewards you have yet to redeem.</p>
+          </div>
+        </div>
+
+        <!-- third card -->
+        <div class='col-md-3 card'>
+          <button type="button" class="btn btn-primary btn-lg" onclick="location.href = 'post.html';">Post a Task</button>
+          <div class="card-body">
+            <p class="card-text eventbrite">Post a community service task to be claimed by community members.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class>How it Works</h1>
+      <div class="content">
+        <p>Claiming a Task: When you click "Claim a Task, you'll see pins on a map of 2 different types of tasks waiting to be completed in your area: community service tasks and verification tasks.</p>
+        <ul>
+          <li>Community Service Tasks: Select a community service task to complete, Once you complete the task, move through the verification steps to get a fellow community member to verify the task is complete. Then enjoy your rewards!</li>
+          <li><br></li>
+          <li>Verification Tasks: Select a task completed by a fellow community member. Verify whether the task is completed or not: Be truthful! You will be rewarded whether or not the task is complete. </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- bootstrap -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
