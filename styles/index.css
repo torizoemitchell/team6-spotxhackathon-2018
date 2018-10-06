@@ -15,6 +15,7 @@
   /* padding-right: 25px;
   padding-left: 25px;
   padding-bottom: 25px;*/
+  margin-bottom: 20px;
 }
 
 #map {
@@ -35,6 +36,7 @@
   padding-top: 20px;
   padding-bottom: 30px;
   margin-bottom: 0px;
+  text-size:50px;
 }
 
 #navbar {
