@@ -2,14 +2,7 @@
 
 1st Place Winner of SpotX Sustaining our Communities Hackathon 2018. A place to post crowd-sourced community service tasks. Complete the task to get rewards from local businesses. This version was built in 5 hours by Team 6.
 
-
-### Installing
-
-```
-git clone https://github.com/torizoemitchell/team6-spotxhackathon-2018.git
-cd team6-spotxhackathon-2018
-npm install
-```
+![screenshot](./Screenshot.png)
 
 
 ## Built With
