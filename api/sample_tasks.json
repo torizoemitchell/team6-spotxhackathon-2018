@@ -1,0 +1,33 @@
+[
+	{
+		"userId": "1",
+		"status": "active",
+		"type": "Sanitation",
+		"desc": "A trash located on the street has been knocked over and debris is all over the sidewalk.",
+		"incent": "10",
+		"location": "8001 Arista Pl, Broomfield, CO 80021",
+		"lat": "39.905940",
+		"lng": "-105.086930"
+	},
+	{
+		"userId": "5",
+		"status": "pending",
+		"type": "trail",
+		"desc": "Flatirons Visa North trail has been eroded from the latest rainfall. ",
+		"incent": "95",
+		"location": "3663 CO-93, Boulder, CO 80302",
+		"lat": "39.922580",
+		"lng": "-105.238680"
+	},
+	{
+		"userId": "5",
+		"status": "active",
+		"type": "Sanitation",
+		"desc": "Sheridan Crossing Shopping Center needs someone to remove graffiti.",
+		"incent": "80",
+		"location": "5150 W 120th Ave Westminster, CO 80020",
+		"lat": "39.912670",
+		"lng": "-105.050650",
+		"taskId": "3"
+	}
+]

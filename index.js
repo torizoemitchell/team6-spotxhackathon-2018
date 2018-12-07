@@ -8,8 +8,8 @@ var map, infoWindow;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {
-      lat: -34.397,
-      lng: 150.644
+      lat: 39.5501,
+      lng: -105.7821
     },
     zoom: 6
   });
@@ -33,7 +33,7 @@ function initMap() {
         }
       });
       map.setCenter(pos);
-      map.setZoom(13);
+      map.setZoom(12);
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());
     });
@@ -61,7 +61,7 @@ function initMap() {
           return function() {
             infoWindow.setContent('<h3>'+ response.data.Items[i].type +'</h3>'
             +'<p>'+ response.data.Items[i].desc +'</p>'
-            +'<a class="btn btn-primary" href="complete.html?t='+ parseInt(response.data.Items[i].taskId) +'&desc='+ response.data.Items[i].desc +'" role="button">Claim This Task</a>');
+            +'<a class="btn btn-primary" href="complete.html?t='+ parseInt(response.data.Items[i].taskId) +'&desc='+ response.data.Items[i].desc +'&type='+ response.data.Items[i].type +'&loc='+ response.data.Items[i].location +'&stat='+ response.data.Items[i].status +'" role="button">Claim This Task</a>');
             infoWindow.open(map, marker);
           }
         })(marker, i));

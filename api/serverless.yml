@@ -1,0 +1,65 @@
+# the service name
+service: spotxHackAPI
+package:
+  exclude:
+    - env.yml
+provider:
+  # the cloud provider
+  name: aws
+  # the stage, defaults to 'dev'
+  stage: ${opt:stage, 'dev'}
+  # the region, defaults to 'us-east-2'
+  region: ${opt:region, 'us-east-2'}
+  # the environment variables, loaded from env.xml
+  environment: ${file(env.yml):${self:provider.stage}}
+  # the runtime language
+  runtime: nodejs6.10
+  # permissions
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - lambda:InvokeFunction
+        - dynamodb:CreateTable
+        - dynamodb:Query
+        - dynamodb:Scan
+        - dynamodb:GetItem
+        - dynamodb:PutItem
+        - dynamodb:UpdateItem
+        - dynamodb:DeleteItem
+      Resource: '*'
+custom:
+  prune:
+    automatic: true
+    number: 3
+
+functions:
+  getTasks:
+    handler: index.getTasks
+    events:
+      - http:
+          path: tasks
+          method: get
+          cors: true
+resources:
+  # resources, such as DynamoDB tables, SQS, or SNS, etc.
+  Resources:
+    # In DynamoDb you only define the key with which to retrieve the
+    # values of the item in the table, not the schema of the item
+    # itself. DynamoDb is schemaless, and the values stored against
+    # each 'column' are defined when the item is added.
+    tasksTable:
+      Type: 'AWS::DynamoDB::Table'
+      DeletionPolicy: Retain
+      Properties:
+        TableName: spotx-hack-tasks-${self:provider.stage}
+        AttributeDefinitions:
+          - AttributeName: userId
+            AttributeType: S
+        KeySchema:
+          - AttributeName: userId
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 100
+          WriteCapacityUnits: 199
+plugins:
+  - serverless-prune-plugin

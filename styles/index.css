@@ -16,6 +16,11 @@
   /* margin: 20px; */
   margin-bottom: 20px;
 }
+
+#map {
+  margin: 0 auto;
+}
+
 .card{
   padding-top: 10px;
   border-color: none;
