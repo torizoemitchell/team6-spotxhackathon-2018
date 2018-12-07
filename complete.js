@@ -5,7 +5,6 @@
 //
 //   console.log("myParam: ", myParam)
 // })
-=======
 
 const urlParams = new URLSearchParams(window.location.search);
 const desc = urlParams.get('desc');
