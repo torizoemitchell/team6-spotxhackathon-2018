@@ -18,9 +18,9 @@
 
 ## Authors
 
-* **Tori Mitchell**
-* **Ethan Weeks**
-* **Tyler Oreskey**
+* **[Tori Mitchell](https://github.com/torizoemitchell)**
+* **[Ethan Weeks](https://github.com/EGWeeks)**
+* **[Tyler Oreskey](https://github.com/Tyler-Oreskey)**
 
 
 ## Acknowledgments
