@@ -1,4 +1,4 @@
-# GoodWorks 1.0.0
+# GoodWorks 1.0
 
 1st Place Winner of SpotX Sustaining our Communities Hackathon 2018. A place to post crowd-sourced community service tasks. Complete the task to get rewards from local businesses. This version was built in the 5 hours allotted by the event. Teams and projects were judged on completeness of project, presentation, creativity, and if a solution that contributes to "sustaining our communities" is offered.
 
