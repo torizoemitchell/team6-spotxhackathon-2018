@@ -27,4 +27,4 @@
 
 ## Acknowledgments
 
-* Spot X Women for sponsoring the Sustaining Our Communities Hackathon
+* SpotX Women for sponsoring the Sustaining Our Communities Hackathon
